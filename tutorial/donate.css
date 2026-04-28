@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: color #f4f7fb;;
+  color: #333;
+  
+  
+}
+
+/* HEADER */
+header {
+  background-color: rgb(10, 97, 112);
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index:1000;
+  
+}
+
+/* NAV for desktop */
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c99e0f;
+   
+}
+
+/* HAMBURGER  hides on desktop */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* MOBILE DESIGN */
+@media (max-width: 768px) {
+
+  /* SHOW HAMBURGER */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* HIDE NAV */
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    flex-direction: column;
+    background: rgb(10, 97, 112);
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* SHOW WHEN ACTIVE */
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+}
+
+/* ANIMATION */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+/* be the light section */
+.light-section{
+  text-align: center;
+  /* background-color: #e0c08f; */
+}
+
+.light-section h2{
+  color: #0e0101;
+  font-size: 40px;
+}
+.light-section p{
+  padding:20px;
+}
+
+/* About Section */
+.about { 
+    background: rgb(231, 218, 164); padding: 60px 40px; border-radius: 10px; margin-top: -50px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+
+.about h2 { 
+    color: #b22121; border-bottom: 7px solid #cd9745;
+    display: flex;
+    padding-bottom: 5px;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+
+/* Impact Grid */
+.impact-grid { 
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    margin-top: 40px; }
+.impact-card { 
+    background: #fff; padding: 20px; 
+    border: 1px solid #eee; border-radius: 8px; text-align: center; }
+
+    .impact-card h3 { color: #ff5a5f; margin-top: 0; }
+
+
+
+    /* donation */
+.donate-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f8fbff, #eef5ff);
+}
+
+.donate-section h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.donate-section p {
+  margin-bottom: 40px;
+  color: #215faf;
+}
+
+/* CARD GRID */
+.donate-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* CARD */
+.donate-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.donate-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+/* IMAGE */
+.donate-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.card-content {
+  padding: 20px;
+  
+  text-align: center;
+}
+
+.card-content h2 {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.card-content button {
+  background: #16962b;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.card-content button:hover {
+  background: #90b929;
+}
+
+/* HIDDEN DETAILS */
+.details {
+  display: none;
+  margin-top: 15px;
+  background: #6d81a5;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+.method-box {
+   background: white;
+        padding: 10px 10px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        max-width: 600px;
+        
+        transition: transform 0.3s ease;
+        margin: 10px auto;
+}
+.method-box:hover {
+        transform: translateY(-5px);}
+
+.method-box p {
+        font-size: 20px;
+        font-weight: bold;
+        color: #a3137f;
+        margin: 0;}
+
+
+        
+/* FOOTER */
+footer {
+  background:rgb(10, 97, 112);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  
+  
+}
