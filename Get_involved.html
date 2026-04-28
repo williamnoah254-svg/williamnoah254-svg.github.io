@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js" defer></script>
+</head>
+
+<header>
+    <img src="../images/logo.png" alt="logo" width="50" height="50">
+    <h2>Child of Mercy Children's Home</h2>
+ 
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About</a>
+        <a href="Programmes.html">Programmes</a>
+        <a href="success_stories.html">Our Children</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="Get_involved.html">Get Involved</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<body>
+<section class="get-involved">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Get Involved</h2>
+      <p>
+        Every child deserves love, care, and the opportunity to dream. At Child of Mercy Children’s Home, we open our hearts to children who need hope—and we invite you to be part of that journey.
+
+        Getting involved is more than an act of kindness—it is a commitment to building a brighter future. Whether you give your time, resources, or voice, you are helping a child feel seen, valued, and supported.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="involve-cards">
+
+      <div class="card">
+        <h3>Volunteer</h3>
+        <p>
+          Share your time and heart. Help with tutoring, mentorship, games, or simply being present. Your presence brings joy, hope, and confidence to our children.
+        </p><br>
+              <a href="#" onclick="openForm()" class="btn">Apply Now</a>
+    
+      </div>
+
+      <div class="card">
+        <h3>Donate</h3>
+        <p>
+          Support essential needs like food, education, and healthcare. Every contribution helps us provide a safe and loving environment.
+        </p><br>
+        <a href="donate.html" class="btn">Donate Now</a>
+        
+      </div>
+
+      <div class="card">
+        <h3>Spread the Word</h3>
+        <p>
+          Use your voice to raise awareness. Share our mission with your community and help us reach more people who care.
+        </p>
+        <a href="#" class="btn share-btn" onclick="openShare()">Share Our Mission</a>
+      </div>
+
+      <div class="card">
+        <h3>Fundraise</h3>
+        <p>
+          Organize events or campaigns to support our children. Turn your creativity into impact and inspire others to give.
+        </p>
+      </div>
+
+    </div>
+
+    
+<div class="share-popup" id="sharePopup">
+  <div class="share-box">
+    <span onclick="closeShare()" class="close-btn"></span>
+    
+    
+    
+  </div>
+</div>
+
+    <!-- Why Section -->
+    <div class="why-section">
+      <h3>Why Your Involvement Matters</h3>
+      <p>
+        Every child deserves love, dignity, and opportunity. When you get involved, you help create a safe space where children can grow, learn, and dream again.
+      </p>
+      <p>
+        Many of our volunteers say this experience changes their lives too—through connection, purpose, and the joy of giving back.
+      </p>
+      <p>
+        We offer opportunities in teaching,
+      caregiving, mentoring, and administrative support. Your skills and passion can make a real difference in the lives of our children.
+      </p><br>
+      <h3>Opportunities</h3>
+    <ul>
+      <li>Teaching & Homework Assistance</li>
+      <li>Mentorship Programs</li>
+      <li>Child Care Support</li>
+      <li>Event Organization</li>
+      <li>Administrative Support</li>
+      <li>Music and Arts Programs</li>
+      <li>Healthcare Services</li>
+      <li>Construction and Maintenance</li>
+      <li>Community Engagement</li>
+      <li>Sponsorship & Fundraising Initiatives</li>
+    </ul><br>
+
+    <h3>Time Commitment</h3>
+    <p>
+      Flexible schedules are available. Volunteers can commit weekly, monthly,
+      or for specific projects depending on availability and interest. We welcome both short-term and long-term involvement.
+    </p>
+    <p>
+      Your involvement, no matter how big or small, creates a ripple effect of hope and change. 
+
+    </p>
+
+    </div>
+
+    <!-- Story Highlight -->
+    <div class="story-box">
+      <h3>A Story of Hope</h3>
+      <p>
+        One child came to us shy and withdrawn. With time, care, and support from volunteers, they found confidence, improved in school, and began to dream again.
+      </p>
+      <p><strong>This is the difference you can make.</strong></p>
+      <img src="../images/hope.jpg" alt="" width="100%" height="auto">
+    </div> 
+
+  
+<section>
+  <div class="color-h3">
+    <h3>For volunteer application form, click the button below and fill out the details and we’ll get in touch with you.</h3>
+  </div>
+       <button id="toggleButton">Apply to Volunteer</button>
+
+  <div class="form-popup" id="applicationForm">
+  <div class="form-container">
+
+       <span class="close-btn" onclick="closeForm()">✖</span>   
+       
+            
+    <form id="appForm">
+        
+        <h2>Volunteer Application Form</h2>
+              
+        <label for="username">Username:</label>
+        <input type="text" id="country" name="country">
+                
+        <label for="age">Age:</label>
+        <input type="text" id="city" name="city">
+                
+        <label for="address">Address:</label>
+        <input type="text" id="street" name="street">
+                
+        <label for="country">Country:</label>
+        <label for="phone">Phone Number:</label>
+        <label for="city">Town/City:</label>
+        <input type="tel" id="phone" name="phone" required>
+                
+        <label for="street">Street:</label>
+        <input type="email" id="email" name="email" required>
+                
+        <label for="email">Email:</label>
+        <label for="english">Level of English:</label>
+        <input type="text" id="english" name="english">
+
+        <label for="profession">Studies or Profession:</label>
+        <input type="text" id="profession" name="profession">
+
+        <label for="start_date">Workcamp Starting Date:</label>
+        <input type="date" id="start_date" name="start_date">
+
+        <label for="emergency">Emergency Contact:</label>
+        <input type="text" id="emergency" name="emergency">
+
+        <label for="experience">Volunteer Experience:</label>
+        <textarea id="experience" name="experience"></textarea>
+
+        <label for="expectation">Expectations:</label>
+        <textarea id="expectation" name="expectation"></textarea>
+
+        <label for="motivation">Motivation:</label>
+        <textarea id="motivation" name="motivation"></textarea>
+
+        <label for="team">Preferred Team:</label>
+        <select id="team" name="team">
+            <option value="">Select a team</option>
+            <option>Child Program</option>
+            <option>Sponsorship & Collaboration</option>
+            <option>Administration</option>
+            <option>Health Care</option>
+            <option>Tutoring</option>
+            <option>Music Project</option>
+            <option>Construction</option>
+        </select>
+
+        <button type="submit" class="btn">Submit Application</button>
+
+    </form>
+  </div>
+  </div>
+</section>
+
+    <!-- CTA -->
+  <div class="cta-box">
+      <h3>Ready to Make a Difference?</h3>
+      <p>Join our mission and help us build a brighter future for every child.</p><br><br>
+      <a href="contact.html" class="btn">Join Us Today</a>
+  </div>
+  
+</section>
+
+
+<footer>
+    <p>&copy; 2026 Child of Mercy Children's Home</p>
+    <p>All rights Reserved.</p>
+    <p>P.O Box 1251-80100,Mombasa, Kenya</p>
+</footer>
+
+</body>
+</html>
