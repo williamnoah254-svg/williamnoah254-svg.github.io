@@ -16,6 +16,7 @@ if (toggle && menu) {
   });
 }
 
+
 // GET INVOLVED 
 const toggleButton = document.getElementById("toggleButton");
 const formPopup = document.getElementById("applicationForm");
